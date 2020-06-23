@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      // не стал бы делать что-то подобное в реальном проекте, но по условию задания ссылки на adding и removal
-      // должны быть на главной странице, хотя это филтрация уровня History. В качестве компромиса вставил это в меню
+      <!-- не стал бы делать что-то подобное в реальном проекте, но по условию задания ссылки на adding и removal -->
+      <!-- должны быть на главной странице, хотя это филтрация уровня History. В качестве компромиса вставил это в меню -->
       <router-link to="/">Home</router-link> |
       <router-link to="/history">History</router-link> |
       <router-link to="/history?type=adding">Add history</router-link> |
