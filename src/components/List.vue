@@ -66,7 +66,9 @@ export default {
   },
   methods: {
     addItem (item) {
+      // решил, что лучше будет записывать это состояние в хранилище, так логичнее
       setStorage('history', Object.assign({}, item, {date: new Date(), type: 'adding'}))
+      // а эти данные в стор, т.к. приятнее работать с этим ui, когда состояние колонок сохраняется при переходе к history
       this.$store.commit('addSelectedPokemon', item)
     },
     removeItem (index) {

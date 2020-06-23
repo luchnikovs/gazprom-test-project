@@ -12,7 +12,7 @@ export default {
   name: 'History',
   computed: {
     history () {
-      return getStorage('history') || []
+      return getStorage('history')
     }
   },
   components: {

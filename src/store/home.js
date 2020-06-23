@@ -19,6 +19,7 @@ export default {
   actions: {
     async getPokemons ({commit}, limit = 100) {
       const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${limit}`)
+
       commit('setPokemons', await response.json())
     }
   }
